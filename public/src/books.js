@@ -13,7 +13,7 @@ const partitionBooksByBorrowedStatus = books => {
   let borrowed = books.filter(element => element.borrows[0].returned === false);
   let returned = books.filter(element => element.borrows[0].returned === true);
   return [borrowed, returned]
-}
+};
 
 //return an array for all borrowers of a book with their information, create empty array, for each index in accounts return borrows. But for each borrows element if the id matches the account id and has been returned. Push account to empty array and return 10
 //ask mentor about below

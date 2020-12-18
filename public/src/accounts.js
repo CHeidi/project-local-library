@@ -19,7 +19,7 @@ return sum;
 };
 
 //return borrowed books that have not yet been returned with author embedded. Use a helper function to get the author.
-//used reduce to get author id from books and match with author. Then use that and filter to find books currently being borrowed by provided account. 
+//used reduce to get author id from books and match with author. Then use that and filter to find books currently being borrowed by provided account
 const getBooksPossessedByAccount = (account, books, authors) => getAuthor(authors, books).filter((book) => book.borrows.find(borrow => borrow.id === account.id && borrow.returned === false));
 function getAuthor(authors, books) {
 let result = [];

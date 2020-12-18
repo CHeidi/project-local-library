@@ -69,7 +69,7 @@ const getMostPopularAuthors = (books, authors) => {
     newObj['name'] = getAuthorName(authors, parseInt(key)); 
     newObj['count'] = value; 
     popularAuthors.push(newObj); 
-  }
+  };
   let sortedPopularAuthors = popularAuthors.sort((authorA, authorB) => authorB.count - authorA.count);
   return sortedPopularAuthors.slice(0,5);
 };
