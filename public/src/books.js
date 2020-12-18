@@ -3,7 +3,7 @@ const findAuthorById = (authors, id) => {
   let found = authors.find((element) => element.id === id);
     return found
   };
-//used find to see if the element id from books would match the id provided in the parameter
+//used find to see if the element id from books would match the id provided in the parameter.
 const findBookById = (books, id) => {
   let found = books.find((element) => element.id === id);
   return found

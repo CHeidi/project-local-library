@@ -3,7 +3,7 @@ const findAccountById = (accounts, id) => {
   let found = accounts.find((element) => element.id === id);
   return found;
 }
-//sorts the accounts array alaphabetically by last name
+//sorts the accounts array alaphabetically by last name.
 const sortAccountsByLastName = accounts => {
 return accounts.sort((name1, name2) => name1.name.last.toLowerCase() > name2.name.last.toLowerCase() ? 1 : -1
 )};

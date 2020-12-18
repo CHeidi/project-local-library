@@ -72,7 +72,7 @@ const getMostPopularAuthors = (books, authors) => {
   }
   let sortedPopularAuthors = popularAuthors.sort((authorA, authorB) => authorB.count - authorA.count);
   return sortedPopularAuthors.slice(0,5);
-}
+};
 
 
 module.exports = {
